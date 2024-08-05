@@ -17,8 +17,8 @@ label {
 }
 
 .container {
-  width: min(350px, 90%);
-  margin: 0 auto;
+  width: min(1080px, 90%);
+  margin: 1em auto;
 }
 
 .playlist {
@@ -69,11 +69,11 @@ label #play {
   padding: 1em 1.5em;
   background-color: #333;
   border-radius: 10px;
-  margin-block: 1em;
+  margin: 1em 0;
 }
 
 .track-songs i {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .song {
@@ -90,4 +90,20 @@ label #play {
 
 .playing {
   color: green;
+}
+
+@media screen and (min-width:40em) {
+  .container {
+    display: flex;
+    gap: 2em;
+  }
+
+  .player {
+    flex: 1 40%;
+  }
+
+  .track-songs {
+    flex: 1 60%;
+    margin: 0;
+  }
 }
