@@ -6,74 +6,94 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>Music Player</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <section class="playlist">
-      <p>NOW PLAYING</p>
-      <p class="playlist-title">ALIVE</p>
-    </section>
-  </div>
-  <div class="container">
-    <article class="player">
-      <section class="track">
-        <img class="track-cover" src="./Alive.jpg">
-        <div>
-          <p class="track-title">Blue</p>
-          <p class="track-artist">BIGBANG</p>
+  <div>
+    <div class="container">
+      <section class="playlist">
+        <p>NOW PLAYING</p>
+        <p class="playlist-title">True</p>
+      </section>
+    </div>
+    <div class="container">
+      <article class="player">
+        <section class="track">
+          <img class="track-cover" src="https://i.scdn.co/image/ab67616d0000b273e14f11f796cef9f9a82691a7">
+          <div>
+            <p class="track-title">Wake Me Up</p>
+            <p class="track-artist">Avicii</p>
+          </div>
+        </section>
+        <section class="buttons">
+          <label class="shuffle">
+            <input type="checkbox">
+            <i id="shuffle" class="bi bi-shuffle"></i>
+          </label>
+          <label for="">
+            <i class="bi bi-skip-start-fill"></i>
+          </label>
+          <label class="play">
+            <input type="checkbox">
+            <i id="play" class="bi bi-play-circle-fill"></i>
+          </label>
+          <label for="">
+            <i class="bi bi-skip-end-fill"></i>
+          </label>
+          <label class="repeat">
+            <input type="checkbox">
+            <i id="repeat" class="bi bi-repeat"></i>
+          </label>
+        </section>
+      </article>
+      <section class="track-songs">
+        <p><strong>Tracklist</strong></p>
+        <div class="song">
+          <p>1. Wake Me Up</p>
+          <i class="playing bi bi-music-note-beamed"></i>
+        </div>
+        <div class="song">
+          <p>2. You Make Me</p>
+          <i class="bi bi-play-fill"></i>
+        </div>
+        <div class="song">
+          <p>3. Hey Brother</p>
+          <i class="bi bi-play-fill"></i>
+        </div>
+        <div class="song">
+          <p>4. Addicted To You</p>
+          <i class="bi bi-play-fill"></i>
+        </div>
+        <div class="song">
+          <p>5. Dear Boy</p>
+          <i class="bi bi-play-fill"></i>
+        </div>
+        <div class="song">
+          <p>6. Liar Liar</p>
+          <i class="bi bi-play-fill"></i>
+        </div>
+        <div class="song">
+          <p>7. Shame On Me</p>
+          <i class="bi bi-play-fill"></i>
+        </div>
+        <div class="song">
+          <p>8. Lay Me Down</p>
+          <i class="bi bi-play-fill"></i>
+        </div>
+        <div class="song">
+          <p>9. Hope There's Someone</p>
+          <i class="bi bi-play-fill"></i>
+        </div>
+        <div class="song">
+          <p>10. Heart Upon My Sleeve</p>
+          <i class="bi bi-play-fill"></i>
+        </div>
         </div>
       </section>
-
-      <section class="buttons">
-        <label class="shuffle">
-          <input type="checkbox">
-          <i id="shuffle" class="bi bi-shuffle"></i>
-        </label>
-        <label class="play">
-          <input type="checkbox">
-          <i id="play" class="bi bi-play-circle-fill"></i>
-        </label>
-        <label class="repeat">
-          <input type="checkbox">
-          <i id="repeat" class="bi bi-repeat"></i>
-        </label>
-      </section>
-    </article>
-    <section class="track-songs">
-      <p><strong>Tracklist</strong></p>
-      <div class="song">
-        <p>1. Intro (Alive)</p>
-        <i class="bi bi-play-fill"></i>
-      </div>
-      <div class="song">
-        <p>2. Blue</p>
-        <i class="playing bi bi-music-note-beamed"></i>
-      </div>
-      <div class="song">
-        <p>3. Love Dust</p>
-        <i class="bi bi-play-fill"></i>
-      </div>
-      <div class="song">
-        <p>4. Bad Boy</p>
-        <i class="bi bi-play-fill"></i>
-      </div>
-      <div class="song">
-        <p>5. Ain't No Fun</p>
-        <i class="bi bi-play-fill"></i>
-      </div>
-      <div class="song">
-        <p>6. Fantastic Baby</p>
-        <i class="bi bi-play-fill"></i>
-      </div>
-      <div class="song">
-        <p>7. Wings</p>
-        <i class="bi bi-play-fill"></i>
-      </div>
-    </section>
+    </div>
   </div>
   <script src="main.js"></script>
 </body>
