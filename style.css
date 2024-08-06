@@ -93,17 +93,16 @@ label #play {
 }
 
 @media screen and (min-width:40em) {
-  body {
-    position: relative;
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  
+
   .player {
-    position: absolute;
-    top: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     padding: 1em 0;
+    width: auto;
   }
 
   .track {
@@ -119,12 +118,11 @@ label #play {
   }
 
   .buttons {
+    width: 100%;
     justify-content: space-around;
-    width: 70%;
-    bottom: 0;
   }
   
-  .track-songs {
+  /* .track-songs {
     margin-bottom: 7em;
-  }
+  } */
 }
