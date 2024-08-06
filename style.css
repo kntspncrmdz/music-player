@@ -26,7 +26,6 @@ label {
   color: #999;
   font-size: 1.5rem;
   font-weight: 400;
-  margin-top: 1em;
 }
 
 .playlist {
@@ -42,7 +41,7 @@ label {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-block: 1em;
+  margin-block: 0;
 }
 
 .track-title {
@@ -96,12 +95,13 @@ label #play {
   .container {
     display: flex;
     flex-direction: column-reverse;
+    margin: 0 auto;
   }
 
   .player {
     display: flex;
     align-items: center;
-    padding: 1em 0;
+    padding: 0;
     width: auto;
   }
 
@@ -121,8 +121,4 @@ label #play {
     width: 100%;
     justify-content: space-around;
   }
-  
-  /* .track-songs {
-    margin-bottom: 7em;
-  } */
 }
