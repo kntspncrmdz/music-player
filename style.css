@@ -43,6 +43,9 @@ label {
 }
 
 .track-title {
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -111,6 +114,7 @@ label #play {
     display: flex;
     align-items: center;
     padding: 0;
+    gap: 1em;
     width: auto;
   }
 
@@ -125,6 +129,10 @@ label #play {
     width: 125px;
     height: 125px;
     margin-block: 0;
+  }
+
+  .track-title {
+    width: 155px;
   }
 
   .buttons {
