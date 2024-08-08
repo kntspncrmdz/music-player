@@ -131,7 +131,7 @@ label #play {
   .track-title {
     width: 155px;
     overflow: hidden;
-    text-wrap: nowrap;
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
 
