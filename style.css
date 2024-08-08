@@ -12,10 +12,6 @@ input[type="checkbox"] {
   display: none;
 }
 
-label {
-  font-size: 2rem;
-}
-
 .container {
   width: min(720px, 90%);
   margin: 0 auto;
