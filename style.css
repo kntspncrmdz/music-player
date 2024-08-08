@@ -43,11 +43,12 @@ label {
 }
 
 .track-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .track-artist {
+  font-size: 0.75rem;
   color: #999;
 }
 
@@ -58,8 +59,12 @@ label {
   border-radius: 10px;
 }
 
+.buttons label {
+  font-size: 1.5rem;
+}
+
 label #play {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .track-songs {
@@ -67,8 +72,6 @@ label #play {
   background-color: #333;
   border-radius: 10px;
   margin: 1em 0;
-  overflow-y: scroll;
-  scrollbar-width: none;
 }
 
 .track-songs i {
@@ -106,38 +109,47 @@ label #play {
     margin: 0 auto;
   }
 
+  .playlist {
+    height: 5vh;
+  }
+
   .player {
-    height: 20vh;
     display: flex;
     align-items: center;
     padding: 0;
     gap: 1em;
     width: auto;
+    height: 20vh;
   }
 
   .track {
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     gap: 1em;
   }
 
   .track-cover {
-    width: 125px;
-    height: 125px;
+    width: 35%;
+    height: 35%;
     margin-block: 0;
   }
 
   .track-title {
-    width: 155px;
+    width: 220px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
 
+  .track-songs {
+    height: 60vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
   .buttons {
-    height: 5vh;
-    width: 60%;
+    width: 50%;
   }
 }
 
